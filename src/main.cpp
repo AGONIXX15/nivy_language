@@ -1,7 +1,7 @@
-#include <print>
+#include <iostream>
 
 int main(int argc, const char *argv[]) {
-  std::println("Hello World!");
+  std::cout << "C++\n";
 
   return 0;
 }
