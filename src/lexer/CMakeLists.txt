@@ -9,4 +9,4 @@ include_directories(include)
 file(GLOB LEXER_SOURCES src/*.cpp)
 
 add_library(${PROJECT_NAME} STATIC ${LEXER_SOURCES})
-target_include_directories(${PROJECT_NAME} PUBLIC include/omega/lexer/public)
+target_include_directories(${PROJECT_NAME} INTERFACE include)

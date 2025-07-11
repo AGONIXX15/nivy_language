@@ -1,5 +1,5 @@
 #pragma once
 
-class Symbols {
+class symbols {
 public:
 };
