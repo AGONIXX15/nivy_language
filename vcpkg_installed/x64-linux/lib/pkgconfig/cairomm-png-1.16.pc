@@ -1,0 +1,6 @@
+prefix=${pcfiledir}/../..
+Name: cairomm-png
+Description: C++ wrapper for cairo - png support
+Version: 1.18.0
+
+Requires: cairomm-1.16 cairo-png

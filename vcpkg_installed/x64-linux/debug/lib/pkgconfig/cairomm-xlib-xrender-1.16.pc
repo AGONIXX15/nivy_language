@@ -1,0 +1,6 @@
+prefix=${pcfiledir}/../..
+Name: cairomm-xlib-xrender
+Description: C++ wrapper for cairo - xlib-xrender support
+Version: 1.18.0
+
+Requires: cairomm-1.16 cairo-xlib-xrender

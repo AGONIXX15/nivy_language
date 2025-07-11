@@ -1,0 +1,14 @@
+{
+  "/usr/bin/c++" : 
+  {
+    "hash" : "3a2520319191565d469cc97be1c13b93a01bc67f",
+    "size" : 137056,
+    "timestamp" : 1689318589
+  },
+  "/usr/bin/cc" : 
+  {
+    "hash" : "ddc70f023a49f742f4c6479534151cced3ea0a3e",
+    "size" : 928584,
+    "timestamp" : 1683964368
+  }
+}

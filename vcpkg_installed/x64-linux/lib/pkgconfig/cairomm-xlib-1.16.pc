@@ -1,0 +1,6 @@
+prefix=${pcfiledir}/../..
+Name: cairomm-xlib
+Description: C++ wrapper for cairo - xlib support
+Version: 1.18.0
+
+Requires: cairomm-1.16 cairo-xlib
