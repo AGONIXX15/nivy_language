@@ -1,4 +1,4 @@
-#include <omega/lexer/InstructionList.h>
+#include "omega/lexer/InstructionList.h"
 
 void InstructionList::add_char(const char &c) noexcept { token_.push_back(c); }
 
