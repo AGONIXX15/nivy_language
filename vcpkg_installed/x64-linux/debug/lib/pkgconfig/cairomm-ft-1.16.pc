@@ -1,6 +1,0 @@
-prefix=${pcfiledir}/../..
-Name: cairomm-ft
-Description: C++ wrapper for cairo - ft support
-Version: 1.18.0
-
-Requires: cairomm-1.16 cairo-ft

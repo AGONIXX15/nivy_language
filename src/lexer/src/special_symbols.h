@@ -4,7 +4,7 @@
 
 class special_symbols {
 public:
-  constexpr static inline std::initializer_list<char> included_cutters = {
+  const static inline std::initializer_list<char> included_cutters = {
       ':', '=', ')', '(', '-', '*', '+', '/', '%', '$', ',', '{', '}',
   };
 
@@ -12,8 +12,12 @@ public:
       ' ',
   };
 
-  constexpr static inline std::initializer_list<char> included_sepertors = {
+  constexpr static inline std::initializer_list<char> included_separators = {
       ';',
       '\n',
+  };
+
+  constexpr static inline std::initializer_list<char> forbidden_symbols = {
+      '\t',
   };
 };

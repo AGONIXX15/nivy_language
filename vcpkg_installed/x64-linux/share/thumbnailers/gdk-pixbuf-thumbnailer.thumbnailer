@@ -1,4 +1,0 @@
-[Thumbnailer Entry]
-TryExec=/home/marcel/Documents/external/vcpkg/packages/gdk-pixbuf_x64-linux/bin/gdk-pixbuf-thumbnailer
-Exec=/home/marcel/Documents/external/vcpkg/packages/gdk-pixbuf_x64-linux/bin/gdk-pixbuf-thumbnailer -s %s %u %o
-MimeType=image/png;image/gif;image/jpeg;image/tiff;

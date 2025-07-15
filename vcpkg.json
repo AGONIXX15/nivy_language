@@ -1,7 +1,6 @@
 {
   "name": "omega",
   "dependencies": [
-    "gtk",
     "gtkmm"
   ]
 }

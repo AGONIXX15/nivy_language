@@ -14,7 +14,7 @@ public:
   void operator delete(void *) = delete;
   void operator delete[](void *) = delete;
 
-  std::vector<std::vector<std::string>> &get() noexcept;
+  operator const std::vector<std::vector<std::string>> &() const noexcept;
 
 private:
   std::vector<std::vector<std::string>> code_;

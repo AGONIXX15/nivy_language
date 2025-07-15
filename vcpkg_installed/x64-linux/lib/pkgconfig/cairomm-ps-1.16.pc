@@ -1,6 +1,0 @@
-prefix=${pcfiledir}/../..
-Name: cairomm-ps
-Description: C++ wrapper for cairo - postscript support
-Version: 1.18.0
-
-Requires: cairomm-1.16 cairo-ps
