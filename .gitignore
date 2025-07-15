@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prerequisites
 *.d
 
@@ -39,7 +40,9 @@
 
 # debug information files
 *.dwo
-.vscode
-build
-out
-log
+/vcpkg_installed
+/.vscode
+/.cache
+/build
+/out
+/log
