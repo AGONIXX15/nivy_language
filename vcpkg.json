@@ -1,6 +1,7 @@
 {
   "name": "omega",
+  "version": "0.1",
   "dependencies": [
-    "gtkmm"
+    "llvm"
   ]
 }

@@ -1,7 +1,8 @@
 #include <iostream>
-#include <omega/lexer/lexer.h>
+#include <omega/lexer/Lexer.h>
 
 int main(int argc, const char *argv[]) {
-  std::cout << "CXX\n";
+  omega::Lexer lexer;
+
   return 0;
-};
+}
