@@ -1,13 +1,15 @@
 #include <iostream>
 #include <fstream>
 #include <omega_language/lexer/Lexer.h>
+#include <omega_language/lexer/Token.h>
 
 std::string read_file(std::string path) {
   std::ifstream file_reader;
   file_reader.open(path);
   std::string buffer;
-  while(!file_reader.eof()) {
-    buffer.push_back(file_reader.get());
+  char ch;
+  while(file_reader.get(ch)) {
+    buffer.push_back(ch);
   }
 
   return std::move(buffer);
@@ -19,6 +21,15 @@ int main(int argc, const char *argv[]) {
   if(argc >= 2) {
     std::string buffer = read_file(argv[1]);
     omega_language::Lexer lex(buffer);
+    std::expected<std::vector<omega_language::Token>, std::string_view> vec = lex.tokenize();
+    if(!vec.has_value()) {
+      std::cerr << vec.error() << '\n';
+      return 1;
+    }
+    for(auto tok: vec.value()) {
+      std::cout << tok << '\n';
+    }
+
   }
   
   
