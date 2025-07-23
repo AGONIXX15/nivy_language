@@ -1,8 +1,8 @@
 #include <format>
 #include <iostream>
-#include <omega_language/lexer/Lexer.h>
+#include <nivy_language/lexer/Lexer.h>
 
-namespace omega_language {
+namespace nivy_language {
 
 Lexer::Lexer(const std::string &file_content, const size_t pos,
              const size_t line, const size_t column)
@@ -76,4 +76,4 @@ std::expected<std::vector<Token>, std::string> Lexer::tokenize() {
   return tokens;
 }
 
-} // namespace omega_language
+} // namespace nivy_language

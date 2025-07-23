@@ -1,9 +1,9 @@
 #pragma once
-#include <omega_language/lexer/Position.h>
-#include <omega_language/lexer/TokenKind.h>
+#include <nivy_language/lexer/Position.h>
+#include <nivy_language/lexer/TokenKind.h>
 #include <string>
 
-namespace omega_language {
+namespace nivy_language {
 
 struct Token {
   std::string_view value;
@@ -15,4 +15,4 @@ struct Token {
   friend std::ostream &operator<<(std::ostream &os, const Token &tok);
 };
 
-} // namespace omega_language
+} // namespace nivy_language

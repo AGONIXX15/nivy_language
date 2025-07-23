@@ -1,8 +1,8 @@
 #include <format>
 #include <iostream>
-#include <omega_language/lexer/Token.h>
+#include <nivy_language/lexer/Token.h>
 
-namespace omega_language {
+namespace nivy_language {
 
 Token::Token(std::string_view value, TokenKind kind, Position start,
              Position end)
@@ -13,4 +13,4 @@ std::ostream &operator<<(std::ostream &os, const Token &tok) {
                     to_string(tok.kind), tok.start, tok.end);
   return os;
 }
-} // namespace omega_language
+} // namespace nivy_language

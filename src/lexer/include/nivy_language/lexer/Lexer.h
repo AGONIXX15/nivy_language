@@ -1,11 +1,11 @@
 #pragma once
 #include <cstddef>
 #include <expected>
-#include <omega_language/lexer/Token.h>
+#include <nivy_language/lexer/Token.h>
 #include <string>
 #include <vector>
 
-namespace omega_language {
+namespace nivy_language {
 
 class Lexer {
 public:
@@ -29,4 +29,4 @@ public:
 
   std::expected<std::vector<Token>, std::string> tokenize();
 };
-} // namespace omega_language
+} // namespace nivy_language

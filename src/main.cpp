@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <omega_language/lexer/Lexer.h>
-#include <omega_language/lexer/Token.h>
+#include <nivy_language/lexer/Lexer.h>
+#include <nivy_language/lexer/Token.h>
 
 std::string read_file(std::string path) {
   std::ifstream file_reader;
@@ -20,8 +20,8 @@ int main(int argc, const char *argv[]) {
 
   if(argc >= 2) {
     std::string buffer = read_file(argv[1]);
-    omega_language::Lexer lex(buffer);
-    std::expected<std::vector<omega_language::Token>, std::string_view> vec = lex.tokenize();
+    nivy_language::Lexer lex(buffer);
+    std::expected<std::vector<nivy_language::Token>, std::string_view> vec = lex.tokenize();
     if(!vec.has_value()) {
       std::cerr << vec.error() << '\n';
       return 1;

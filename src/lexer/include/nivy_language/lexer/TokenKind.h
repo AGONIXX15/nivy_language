@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-namespace omega_language {
+namespace nivy_language {
 
 enum class TokenKind {
   IDENTIFIER,
@@ -32,5 +32,5 @@ inline std::string to_string(TokenKind kind) {
     default: return "UNKNOWN";
   }
 }
-} // namespace omega_language
+} // namespace nivy_language
 
